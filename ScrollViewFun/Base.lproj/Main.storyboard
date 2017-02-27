@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,8 +21,74 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="454-RW-cSm">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dCw-ws-DLU">
+                                        <rect key="frame" x="0.0" y="0.0" width="1875" height="647"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W29-W5-piz" userLabel="sadnessImage">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a3i-pd-UZD" userLabel="joyImage">
+                                                <rect key="frame" x="375" y="0.0" width="375" height="647"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6PP-ny-DJC" userLabel="frearImage">
+                                                <rect key="frame" x="750" y="0.0" width="375" height="647"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jeH-d2-HKy" userLabel="disgustImage">
+                                                <rect key="frame" x="1125" y="0.0" width="375" height="647"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wzw-YG-hH2" userLabel="angerImage">
+                                                <rect key="frame" x="1500" y="0.0" width="375" height="647"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="W29-W5-piz" firstAttribute="leading" secondItem="dCw-ws-DLU" secondAttribute="leading" id="0un-ji-obd"/>
+                                            <constraint firstItem="Wzw-YG-hH2" firstAttribute="top" secondItem="dCw-ws-DLU" secondAttribute="top" id="5tU-hG-5S7"/>
+                                            <constraint firstItem="6PP-ny-DJC" firstAttribute="top" secondItem="dCw-ws-DLU" secondAttribute="top" id="6tQ-tG-b3z"/>
+                                            <constraint firstItem="a3i-pd-UZD" firstAttribute="bottom" secondItem="dCw-ws-DLU" secondAttribute="bottom" id="FjT-kc-Hv2"/>
+                                            <constraint firstItem="jeH-d2-HKy" firstAttribute="bottom" secondItem="dCw-ws-DLU" secondAttribute="bottom" id="PIc-Ms-Hx6"/>
+                                            <constraint firstItem="Wzw-YG-hH2" firstAttribute="bottom" secondItem="dCw-ws-DLU" secondAttribute="bottom" id="QEK-Du-3Wi"/>
+                                            <constraint firstItem="W29-W5-piz" firstAttribute="bottom" secondItem="dCw-ws-DLU" secondAttribute="bottom" id="Wgq-AE-nos"/>
+                                            <constraint firstItem="a3i-pd-UZD" firstAttribute="top" secondItem="dCw-ws-DLU" secondAttribute="top" id="gLc-nA-j55"/>
+                                            <constraint firstItem="6PP-ny-DJC" firstAttribute="bottom" secondItem="dCw-ws-DLU" secondAttribute="bottom" id="js7-DZ-Lpx"/>
+                                            <constraint firstItem="W29-W5-piz" firstAttribute="top" secondItem="dCw-ws-DLU" secondAttribute="top" id="vs5-69-UX5"/>
+                                            <constraint firstItem="jeH-d2-HKy" firstAttribute="top" secondItem="dCw-ws-DLU" secondAttribute="top" id="vtr-0f-XF7"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dCw-ws-DLU" firstAttribute="trailing" secondItem="454-RW-cSm" secondAttribute="trailing" id="3hc-6o-1Hg"/>
+                                    <constraint firstItem="dCw-ws-DLU" firstAttribute="leading" secondItem="454-RW-cSm" secondAttribute="leading" id="U5l-Dk-WHb"/>
+                                    <constraint firstItem="dCw-ws-DLU" firstAttribute="bottom" secondItem="454-RW-cSm" secondAttribute="bottom" id="cdp-HL-Kdn"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jeH-d2-HKy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Afo-5A-h4s"/>
+                            <constraint firstItem="W29-W5-piz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Nlh-Eg-xzB"/>
+                            <constraint firstItem="dCw-ws-DLU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="5" id="Qit-fc-4cr"/>
+                            <constraint firstItem="6PP-ny-DJC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="VzS-9H-EYJ"/>
+                            <constraint firstItem="454-RW-cSm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="W2q-lp-sig"/>
+                            <constraint firstItem="Wzw-YG-hH2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Wuh-KR-uWq"/>
+                            <constraint firstItem="dCw-ws-DLU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="cXV-4s-mHG"/>
+                            <constraint firstItem="454-RW-cSm" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="iEU-qM-V5y"/>
+                            <constraint firstItem="a3i-pd-UZD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="kxW-FX-cFw"/>
+                            <constraint firstItem="dCw-ws-DLU" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="rcV-U8-fCI"/>
+                            <constraint firstItem="454-RW-cSm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="vB6-ap-xRc"/>
+                            <constraint firstItem="454-RW-cSm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="vUV-lc-FRp"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="angerImage" destination="Wzw-YG-hH2" id="mWl-Ys-SG0"/>
+                        <outlet property="disgustImage" destination="jeH-d2-HKy" id="n8l-H6-TlX"/>
+                        <outlet property="fearImage" destination="6PP-ny-DJC" id="7ic-Pc-Z3H"/>
+                        <outlet property="joyImage" destination="a3i-pd-UZD" id="3d7-nq-lbl"/>
+                        <outlet property="sadnessImage" destination="W29-W5-piz" id="6s9-OH-f0D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
